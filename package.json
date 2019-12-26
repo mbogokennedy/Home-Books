@@ -1,0 +1,52 @@
+{
+  "name": "home-books",
+  "version": "1.0.0",
+  "description": "A Nodejs API Using mongo database",
+  "main": "server.js",
+  "scripts": {
+    "start": "set DEBUG=app, app:* & nodemon server.js",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbogokennedy/Home-Books.git"
+  },
+  "keywords": [
+    "Books",
+    "API",
+    "Node",
+    "Express"
+  ],
+  "author": "Kennedy Mbogo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mbogokennedy/Home-Books/issues"
+  },
+  "homepage": "https://github.com/mbogokennedy/Home-Books#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chalk": "^3.0.0",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.3",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "delay": "2500",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
